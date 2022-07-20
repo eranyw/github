@@ -34,9 +34,7 @@ class Date:
      :return: 
      """
 
-
-
-
+ @pytest.mark.parametrize("x", [0, 1])
  def isValid(self):
   if(self._year >1000 and self._year < 9999) and  (self._day > 0 and self._day <=31)  and (self._month> 0 and self._month <13):
          if self._month ==1 or self._month==3 or self._month==5 or self._month==7 or self._month==8 or self._month==10 or self._month==12:
